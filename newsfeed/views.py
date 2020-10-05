@@ -1,8 +1,18 @@
 from django.shortcuts import render
-from .models import News
+from .models import News, Category
 
 
-# Create your views here.
 def index(request):
-    news = News.get_all_news()
-    return render(request, 'newsfeed/index.html', {'news': news})
+    news = None
+    categories = Category.get_all_category()
+    categoryID = request.GET.get('category')
+    if categoryID:
+        news = News.get_all_products_by_categoryid(categoryID)
+    else:
+        news = News.get_all_news()
+
+    data = {}
+    data['news'] = news
+    data['categories'] = categories
+
+    return render(request, 'newsfeed/index.html', data)

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>STM News</title>
-</head>
-<body>
-<h1>{{news}}</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+    {% for new in news %}
+        <h1>{{ new.title }}</h1>
+{#        <p>{{ new.category.name }}</p>#}
+        <img src="{{ new.image.url }}" class="full-width-image my-2" alt="image">
+        <p>{{ new.body }}</p>
+        <hr>
+    {% endfor %}
+{% endblock content %}
