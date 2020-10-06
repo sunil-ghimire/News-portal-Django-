@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import News, Category
+from .models import News, Category, Customer
 
 
 class AdminNews(admin.ModelAdmin):
@@ -13,3 +13,4 @@ class AdminCategory(admin.ModelAdmin):
 # Register your models here.
 admin.site.register(News, AdminNews)
 admin.site.register(Category, AdminCategory)
+admin.site.register(Customer)

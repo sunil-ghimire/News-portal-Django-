@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fb7e0e5-e4f4-4089-82f1-3f99a5348d4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/newsfeed/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/newsfeed/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/STM/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/STM/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/newsfeed/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newsfeed/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601823629860</updated>
-      <workItem from="1601823632988" duration="13821000" />
+      <workItem from="1601823632988" duration="22022000" />
+      <workItem from="1601952019511" duration="5658000" />
     </task>
     <servers />
   </component>
@@ -97,7 +99,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

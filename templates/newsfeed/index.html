@@ -1,8 +1,25 @@
 {% extends 'base.html' %}
+
+
+
 {% block content %}
+    <div class="container d-flex">
+        <div class="filter ml-auto p-2">
+            <label for="cars" class="mx-2 my-4">Filter:</label>
+            <button class="btn btn-light">
+                <a href="/">All</a>
+            </button>
+            {% for category in categories %}
+                <button class="btn btn-light">
+                    <a href="/?category={{ category.id }}">{{ category.name }}</a>
+                </button>
+            {% endfor %}
+        </div>
+    </div>
+    <hr>
     {% for new in news %}
         <h1>{{ new.title }}</h1>
-{#        <p>{{ new.category.name }}</p>#}
+        {#        <p>{{ new.category.name }}</p>#}
         <img src="{{ new.image.url }}" class="full-width-image my-2" alt="image">
         <p>{{ new.body }}</p>
         <hr>

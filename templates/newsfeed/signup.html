@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container">
+        <div class="pt-4 m-4">
+            <div class="col-lg-5 mx-auto border rounded p-4" style="background-color: aliceblue">
+                <h3 class="alert alert-light border rounded" style="background-color: antiquewhite"> Create An
+                    Account</h3>
+                <form action="{% url 'signup' %}" method="post">
+                    {% if error_message %}
+                        <div class="alert alert-danger" role="alert">
+                            {{ error_message }}
+                        </div>
+                    {% endif %}
+                    {% csrf_token %}
+                    <!-- First Name -->
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" value="{{ values.first_name }}"
+                               class="form-control form-control-sm"
+                               placeholder="First Name" required>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" value="{{ values.last_name }}" class="form-control form-control-sm"
+                               placeholder="Last Name" required>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" value="{{ values.phone }}" class="form-control form-control-sm"
+                               placeholder="+977 98********" required>
+                    </div>
+
+                    <!-- email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" value="{{ values.email }}" class="form-control form-control-sm"
+                               placeholder="example@gmail.com" required>
+                    </div>
+
+                    <!-- password -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control form-control-sm"
+                               placeholder="**********" required>
+                    </div>
+
+                    <!-- password -->
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-info btn-sm" value="Creat an Account">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
