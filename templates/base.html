@@ -14,7 +14,7 @@
 <body style="background-color: #eee">
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container">
-        <img src="https://lh3.googleusercontent.com/proxy/iIsEqmiPKBOA2osKan9CFb105GgUo0pMGq0Ceho-eitWmYXcV9W9SHQA07pY6L8raBK500Ql5R9aeWtlv4kT5kKDXpvQ-84ahA"#}
+        <img src="http://softtechmultimedia.com/images/stm-logo.png"
              width="30" height="30" class="d-inline-block align-top mx-2"
              alt="">
         <a class="navbar-brand text-white" href="/">SoftTech Multimedia</a>
@@ -27,38 +27,46 @@
             <ul class="navbar-nav mr-auto">
 
             </ul>
-
-
             <ul class="navbar-nav my-2 my-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Logout <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'signup' %}">SignUp <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{% url 'login' %}">Login <span class="sr-only">(current)</span></a>
-                </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link text-white disable" href="#">Hello, {{ user.first_name }}<span
+                                class="sr-only">(current)</span></a>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Profile
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-white" href="#">Action</a>
-                        <a class="dropdown-item text-white" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-white" href="#">Something else here</a>
-                    </div>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'logout' %}">Logout <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'signup' %}">SignUp <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'login' %}">Login <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                {% endif %}
+
+                {#                <li class="nav-item dropdown">#}
+                {#                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"#}
+                {#                       data-toggle="dropdown"#}
+                {#                       aria-haspopup="true" aria-expanded="false">#}
+                {#                        Profile#}
+                {#                    </a>#}
+                {#                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+                {#                        <a class="dropdown-item text-white" href="#">Action</a>#}
+                {#                        <a class="dropdown-item text-white" href="#">Another action</a>#}
+                {#                        <div class="dropdown-divider"></div>#}
+                {#                        <a class="dropdown-item text-white" href="#">Something else here</a>#}
+                {#                    </div>#}
+                {#                </li>#}
 
             </ul>
         </div>
     </div>
 </nav>
-
 
 
 <div class="container">

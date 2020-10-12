@@ -6,30 +6,31 @@
             <div class="col-lg-5 mx-auto border rounded p-4" style="background-color: aliceblue">
                 <h3 class="alert alert-light border rounded" style="background-color: antiquewhite">Login Here</h3>
                 <form action="{% url 'login' %}" method="post">
-                    {% if error_message %}
-                        <div class="alert alert-danger" role="alert">
-                            {{ error_message }}
+                    {% csrf_token %}
+                    {% if messages %}
+                        <div>
+                            {% for message in messages %}
+                                <h3>{{ message }}</h3>
+                            {% endfor %}
                         </div>
                     {% endif %}
-                    {% csrf_token %}
-
-                    <!-- email -->
+                    <!-- username -->
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" value="{{ values.email }}" class="form-control form-control-sm"
-                               placeholder="example@gmail.com" required>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control form-control-sm"
+                               placeholder="Username" required>
                     </div>
 
                     <!-- password -->
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control form-control-sm"
+                        <input type="password" name="password" class="form-control form-control-sm"
                                placeholder="**********" required>
                     </div>
 
                     <!-- submit -->
                     <div class="form-group">
-                        <input type="submit" class="btn btn-info btn-sm col-lg-4" value="Login">
+                        <input type="submit" class="btn btn-info btn-sm col-lg-4">
                     </div>
 
                 </form>

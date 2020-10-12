@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %}STM | User Registration {% endblock title %}
 {% block content %}
 
     <div class="container">
@@ -7,45 +8,60 @@
                 <h3 class="alert alert-light border rounded" style="background-color: antiquewhite"> Create An
                     Account</h3>
                 <form action="{% url 'signup' %}" method="post">
-                    {% if error_message %}
-                        <div class="alert alert-danger" role="alert">
-                            {{ error_message }}
+                    {% if messages %}
+                        <div>
+                            {% for message in messages %}
+                                <h3></h3>
+                            {% endfor %}
                         </div>
                     {% endif %}
+
                     {% csrf_token %}
                     <!-- First Name -->
                     <div class="form-group">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" value="{{ values.first_name }}"
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name"
                                class="form-control form-control-sm"
-                               placeholder="First Name" required>
+                               required>
                     </div>
 
                     <!-- Last Name -->
                     <div class="form-group">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" value="{{ values.last_name }}" class="form-control form-control-sm"
-                               placeholder="Last Name" required>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name"
+                               class="form-control form-control-sm"
+                               required>
                     </div>
 
-                    <!-- Phone Number -->
+
+                    <!-- username -->
                     <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone" value="{{ values.phone }}" class="form-control form-control-sm"
-                               placeholder="+977 98********" required>
+                        <label for="username">Username</label>
+                        <input type="text" name="username"
+                               class="form-control form-control-sm"
+                               required>
                     </div>
+
 
                     <!-- email -->
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" value="{{ values.email }}" class="form-control form-control-sm"
+                        <input type="email" name="email"
+                               class="form-control form-control-sm"
                                placeholder="example@gmail.com" required>
                     </div>
 
                     <!-- password -->
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control form-control-sm"
+                        <label for="password1">Password</label>
+                        <input type="password" name="password1" class="form-control form-control-sm"
+                               placeholder="**********" required>
+                    </div>
+
+                    <!-- password -->
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" class="form-control form-control-sm"
                                placeholder="**********" required>
                     </div>
 

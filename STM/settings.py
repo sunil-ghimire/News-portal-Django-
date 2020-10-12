@@ -118,3 +118,4 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/stm/downloaded/'
 MEDIA_ROOT = BASE_DIR
+LOGIN_REDIRECT_URL = '/'
