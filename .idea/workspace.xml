@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fb7e0e5-e4f4-4089-82f1-3f99a5348d4d" name="Default Changelist" comment="" />
+    <list default="true" id="1fb7e0e5-e4f4-4089-82f1-3f99a5348d4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/newsfeed/post_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/STM/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0002_category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0003_news_category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0004_auto_20201005_0713.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0005_auto_20201005_0715.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0006_customer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0007_customer_username.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/newsfeed/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newsfeed/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -24,9 +43,11 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,7 +101,11 @@
       <workItem from="1601993770678" duration="1066000" />
       <workItem from="1602002020500" duration="1294000" />
       <workItem from="1602040255300" duration="8936000" />
-      <workItem from="1602478995873" duration="7831000" />
+      <workItem from="1602478995873" duration="8577000" />
+      <workItem from="1602821113143" duration="307000" />
+      <workItem from="1604417723084" duration="2686000" />
+      <workItem from="1604470572205" duration="1451000" />
+      <workItem from="1604472076257" duration="5830000" />
     </task>
     <servers />
   </component>

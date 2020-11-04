@@ -15,6 +15,7 @@ class Category(models.Model):
 class News(models.Model):
     title = models.CharField(max_length=255)
     body = models.TextField()
+    slug = models.SlugField(max_length=200, unique=True)
     image = models.ImageField(upload_to='uploads/images/')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
 

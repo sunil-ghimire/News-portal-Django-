@@ -18,10 +18,10 @@
     </div>
     <hr>
     {% for new in news %}
-        <h1>{{ new.title }}</h1>
-        {#        <p>{{ new.category.name }}</p>#}
+        <h3><a href="{% url 'post_details' new.pk %}">{{ new.title }}</a></h3>
         <img src="{{ new.image.url }}" class="full-width-image my-2" alt="image">
         <p>{{ new.body|slice:":500" }}</p>
+        <a href="{% url 'post_details' new.pk %}" class="btn btn-primary">Read More &rarr;</a>
         <hr>
     {% endfor %}
 {% endblock content %}
