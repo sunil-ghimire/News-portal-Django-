@@ -3,7 +3,6 @@ from .models import News, Category
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.views import generic
-import requests
 
 
 def index(request):
@@ -22,9 +21,9 @@ def index(request):
     return render(request, 'newsfeed/index.html', data)
 
 
-class PostDetail(generic.DetailView):
-    model = News
-    template_name = 'newsfeed/post_details.html'
+def post_details(request, id):
+    data = News.objects.get(id=id)
+    return render(request, 'newsfeed/post_details.html', {'new': data})
 
 
 def login(request):
