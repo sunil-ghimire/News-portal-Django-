@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fb7e0e5-e4f4-4089-82f1-3f99a5348d4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/STM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/STM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsfeed/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsfeed/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/STM/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/STM/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsfeed/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/newsfeed/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newsfeed/index.html" afterDir="false" />
@@ -22,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -100,7 +105,10 @@
       <workItem from="1604470572205" duration="1451000" />
       <workItem from="1604472076257" duration="6358000" />
       <workItem from="1604495410539" duration="640000" />
-      <workItem from="1604660379646" duration="3322000" />
+      <workItem from="1604660379646" duration="5052000" />
+      <workItem from="1604813911440" duration="4256000" />
+      <workItem from="1604891354610" duration="1083000" />
+      <workItem from="1604969004946" duration="2583000" />
     </task>
     <servers />
   </component>

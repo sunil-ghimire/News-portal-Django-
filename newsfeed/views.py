@@ -4,6 +4,10 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.views import generic
 
+# rest framework for api
+from rest_framework import generics
+from .serializers import NewsSerializer
+
 
 def index(request):
     news = None
@@ -75,3 +79,9 @@ def signup(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+
+# view to list API details
+class NewsView(generics.ListAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializer

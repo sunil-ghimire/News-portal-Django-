@@ -4,5 +4,17 @@
 {% block content %}
     <h3>{{ new.title }}</h3>
     <img src="{{ new.image.url }}" class="full-width-image my-2" alt="image">
-    <p>{{ new.body }}</p>
+    <p>{{ new.body|safe }}</p>
+    <hr>
+    <h3 class="mb-4">Comments...</h3>
+    {% if not post.comments.all %}
+        No Comments Yet... <a href="#" class="mb-4">Add One</a><br>
+    {% else %}
+        {% for comment in post.comments.all %}
+            <strong>{{ comment.name }} - {{ comment.date_added }} </strong>
+            <br>
+            {{ comment.body }}
+        {% endfor %}
+    {% endif %}
+    <a href="{% url 'index' %}" class="btn btn-primary mt-4 mb-4">Return Home</a>
 {% endblock content %}
