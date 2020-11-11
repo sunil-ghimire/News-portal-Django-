@@ -3,6 +3,7 @@ from .models import News, Category
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.views import generic
+from .forms import CommentForm
 
 # rest framework for api
 from rest_framework import generics
@@ -26,8 +27,24 @@ def index(request):
 
 
 def post_details(request, id):
-    data = News.objects.get(id=id)
-    return render(request, 'newsfeed/post_details.html', {'new': data})
+    post = News.objects.get(id=id)
+
+    comments = post.comments.filter(active=True)
+    new_comment = None
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = post
+            new_comment.save()
+    else:
+        comment_form = CommentForm()
+
+    return render(request, 'newsfeed/post_details.html',
+                  {'new': post,
+                   'comments': comments,
+                   'new_comment': new_comment,
+                   'comment_form': comment_form})
 
 
 def login(request):

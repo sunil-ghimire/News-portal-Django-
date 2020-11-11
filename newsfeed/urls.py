@@ -9,6 +9,6 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('article/<int:id>', views.post_details, name='post_details'),
 
-    #api path
+    # api path
     path('api/', NewsView.as_view()),
 ]
