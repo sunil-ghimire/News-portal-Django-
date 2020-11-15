@@ -108,5 +108,6 @@ class NewsView(generics.ListAPIView):
 # comment view
 def comment_delete(request, id):
     comment = Comment.objects.get(id=id)
+    news = News.objects.get(id=comment.post.id)
     comment.delete()
-    return redirect('post_details', id=id)
+    return redirect('post_details', id=news.id)
