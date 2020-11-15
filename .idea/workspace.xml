@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1fb7e0e5-e4f4-4089-82f1-3f99a5348d4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/STM/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0003_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/migrations/0004_auto_20201110_0703.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newsfeed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/newsfeed/post_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newsfeed/post_details.html" afterDir="false" />
@@ -26,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -108,7 +102,14 @@
       <workItem from="1604813911440" duration="4256000" />
       <workItem from="1604891354610" duration="1083000" />
       <workItem from="1604969004946" duration="3914000" />
-      <workItem from="1605061199047" duration="4779000" />
+      <workItem from="1605061199047" duration="8901000" />
+      <workItem from="1605147787619" duration="4809000" />
+      <workItem from="1605174860581" duration="2415000" />
+      <workItem from="1605242878118" duration="3655000" />
+      <workItem from="1605273477442" duration="1799000" />
+      <workItem from="1605365366692" duration="215000" />
+      <workItem from="1605366509594" duration="1158000" />
+      <workItem from="1605374903692" duration="602000" />
     </task>
     <servers />
   </component>

@@ -17,6 +17,8 @@
                 {{ comment.created }}
             </p>
             <small>{{ comment.body|linebreaks }}</small>
+            <a href="">Edit</a>
+            <a href="{% url 'comment_delete' comment.id %}">Delete</a>
         </div>
     {% empty %}
         <p>There are no comments yet.</p>
@@ -26,7 +28,7 @@
         <h2>Your comment has been added.</h2>
     {% else %}
         <h2>Add a new comment</h2>
-        <form action="../newsfeed/post_details.html" method="post">
+        <form method="post">
             {{ comment_form.as_p }}
             {% csrf_token %}
             <p><input type="submit" value="Add comment"></p>

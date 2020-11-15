@@ -4,6 +4,7 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.views import generic
 from .forms import CommentForm
+from .models import Comment
 
 # rest framework for api
 from rest_framework import generics
@@ -102,3 +103,10 @@ def logout(request):
 class NewsView(generics.ListAPIView):
     queryset = News.objects.all()
     serializer_class = NewsSerializer
+
+
+# comment view
+def comment_delete(request, id):
+    comment = Comment.objects.get(id=id)
+    comment.delete()
+    return redirect('post_details', id=id)
