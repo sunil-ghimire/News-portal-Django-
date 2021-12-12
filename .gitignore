@@ -1,0 +1,73 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+docker-entrypoint.prod.sh
+docker-compose-139.yml
+entrypoint.sh
+inovation.ini.stag
+docker-compose.yml
+#docker-compose.yml
+
+# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+/static/
+/dvs_db_backup/
+naxa_utilities/local_setting.py
+media
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+
+# Distribution / packaging
+
+MANIFEST
+
+
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environments
+.env
+venv/
+
+
+# Spyder project settings
+
+# Rope project settings
+
+# mkdocs documentation
+
+# mypy
+
+# Pyre type checker
+
+# Docker
+postgres-data-inovation
+Dockerfile
+
+#IDE
+.idea
+
+django_env
+Dockerfile
+Dockerfile.postgis
+postgis_env
+.backup/
+covid.log
+./covid.log
+media/*
+service_account.json

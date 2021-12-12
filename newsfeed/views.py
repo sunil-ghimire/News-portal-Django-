@@ -59,7 +59,7 @@ def login(request):
             return redirect('/')
         else:
             messages.info(request, 'Invalid Credential')
-            return redirect('loign')
+            return redirect('/login/')
     else:
         return render(request, 'newsfeed/login.html')
 
